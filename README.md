@@ -18,7 +18,7 @@ The provided code allows for reproducing exactly the scores reported in the Shar
 6. Run the fourth cell.
 7. Gather results in */content/log_eval_InputFileName.txt*.
 
-It takes about 15-20 minutes to evaluate one output file in English (1,779 texts) with all metrics, and about 1-2 minutes without TER.
+It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,779 texts) with all metrics, and about 3 minutes (+/- 1 min) without TER.
 
 **Cell#1**: to download and install metrics, download data and original code, clone repos, install python dependencies.<br>
 **Cell#2**: to create a slightly modififed version of the evaluation and reference data creation codes.<br>
