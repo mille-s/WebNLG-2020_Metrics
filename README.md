@@ -10,12 +10,15 @@ This repository contains code for getting automatic evaluation results as report
 The provided code allows for reproducing exactly the scores reported in the Shared Task report except for BLEURT, for which the scores are slightly lower. When running the original evaluation code, an error was thrown for BLEURT, stating that the scorer does not take positional arguments; the line that calls the scorer was modified accordingly to flag the arguments for reference and candidate files. It remains to be verified if this could affect the scoring.
 
 ## Quick instructions to run the evaluation on COLAB
-1. Run the first cell.
-2. Drag the file(s) you want to evaluate in the “hypotheses” folder, located directly in the */content/* folder on the leftside.
-3. Run the second cell.
-4. Run the third cell.
-5. Run the fourth cell.
-6. Gather results in */content/log_eval_InputFileName.txt*.
+1. Select a GPU runtime (needed for bertScore and bleurt).
+2. Run the first cell.
+3. Drag the file(s) you want to evaluate in the “hypotheses” folder, located directly in the */content/* folder on the leftside.
+4. Run the second cell.
+5. Run the third cell.
+6. Run the fourth cell.
+7. Gather results in */content/log_eval_InputFileName.txt*.
+
+It takes about 15-20 minutes to evaluate one output file in English (1,779 texts) with all metrics, and about 1-2 minutes without TER.
 
 ## Details about the cells
 - Cell#1: to download and install metrics, download data and original code, clone repos, install python dependencies.
