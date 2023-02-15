@@ -34,7 +34,7 @@ In the following, the specifications for the files that contains the texts to ev
 2. Should have the **.txt extension**.
 3. Should contain **true-cased** and **detokenised** text.
 4. Shoud contain **one text per line**:
-  - each line corresponds to one output.
+  - each line corresponds to one output;
   - the outputs must be in the **same order** as the input file;
   - if there is no output for an input, the line should be **empty** (only linebreak);
   - unless there is no output for the last input, the file should NOT end with a linebreak (so the last line contains a text instead of being empty).
