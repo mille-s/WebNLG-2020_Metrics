@@ -12,7 +12,7 @@ The provided code allows for reproducing exactly the scores reported in the Shar
 ## Quick instructions to run the evaluation on Colab
 1. Select a GPU runtime (needed for bertScore and bleurt; it should be the runtime by default).
 2. Run the first cell.
-3. Drag the file(s) you want to evaluate in the “hypotheses” folder, located directly in the */content/* folder on the leftside (see *Input specifications* below).
+3. Drag the file(s) to evaluate in the “hypotheses” folder, located directly in */content/* on the leftside (see *Input specifications* below).
 4. Run the second cell.
 5. Run the third cell.
 6. Run the fourth cell.
