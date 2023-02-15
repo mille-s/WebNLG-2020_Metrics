@@ -10,7 +10,7 @@ This repository contains code for getting automatic evaluation results as report
 The provided code allows for reproducing exactly the scores reported in the Shared Task report except for BLEURT, for which the scores are slightly lower. When running the original evaluation code, an error was thrown for BLEURT, stating that the scorer does not take positional arguments; the line that calls the scorer was modified accordingly to flag the arguments for reference and candidate files. It remains to be verified if this could affect the scoring.
 
 ## Quick instructions to run the evaluation on COLAB
-1. Select a GPU runtime (needed for bertScore and bleurt).
+1. Select a GPU runtime (needed for bertScore and bleurt; it should be the runtime by default).
 2. Run the first cell.
 3. Drag the file(s) you want to evaluate in the “hypotheses” folder, located directly in the */content/* folder on the leftside.
 4. Run the second cell.
