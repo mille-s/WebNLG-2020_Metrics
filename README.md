@@ -23,7 +23,7 @@ It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,
 **Cell#1**: to download and install metrics, download data and original code, clone repos, install python dependencies.<br>
 **Cell#2**: to create a slightly modififed version of the evaluation and reference data creation codes.<br>
 **Cell#3**: to create files with the reference texts. There are up to 5 references for each input triple set, each file contains one reference for a given input (5 files in total for English, 3 for Russian).<br>
-**Cell#4**: to run the evaluation; by default, all metrics are run. You can choose whoch metric(s) to apply by editing the *metrics* parameter (possible values as string: 'bleu,meteor,ter,chrf++,bert,bleurt'). The parameter *small_test='yes'* allows for testing the code on a small dataset of 10 texts.
+**Cell#4**: to run the evaluation; by default, all metrics are run. You can choose which metric(s) to apply by editing the *metrics* parameter (possible values as string: 'bleu,meteor,ter,chrf++,bert,bleurt'). The parameter *small_test='yes'* allows for testing the code on a small dataset of 10 texts.
 
 ## Input specifications
 
