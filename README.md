@@ -9,7 +9,7 @@ This repository contains code for getting automatic evaluation results as report
 ## Important note on BLEURT
 The provided code allows for reproducing exactly the scores reported in the Shared Task report except for BLEURT, for which the scores are slightly lower. When running the original evaluation code, an error was thrown for BLEURT, stating that the scorer does not take positional arguments; the line that calls the scorer was modified accordingly to flag the arguments for reference and candidate files. It remains to be verified if this could affect the scoring.
 
-## Quick instructions to run the evaluation on COLAB
+## Quick instructions to run the evaluation on Colab
 1. Select a GPU runtime (needed for bertScore and bleurt; it should be the runtime by default).
 2. Run the first cell.
 3. Drag the file(s) you want to evaluate in the “hypotheses” folder, located directly in the */content/* folder on the leftside.
@@ -20,11 +20,10 @@ The provided code allows for reproducing exactly the scores reported in the Shar
 
 It takes about 15-20 minutes to evaluate one output file in English (1,779 texts) with all metrics, and about 1-2 minutes without TER.
 
-## Details about the cells
-- Cell#1: to download and install metrics, download data and original code, clone repos, install python dependencies.
-- Cell#2: to create a slightly modififed version of the evaluation and reference data creation codes.
-- Cell#3: to create files with the reference texts. There are up to 5 references for each input triple set, each file contains one reference for a given input (5 files in total for English, 3 for Russian).
-- Cell#4: to run the evaluation; the parameter *small_test='yes'* allows for testing the code on a small dataset of 10 texts.
+**Cell#1**: to download and install metrics, download data and original code, clone repos, install python dependencies.<br>
+**Cell#2**: to create a slightly modififed version of the evaluation and reference data creation codes.<br>
+**Cell#3**: to create files with the reference texts. There are up to 5 references for each input triple set, each file contains one reference for a given input (5 files in total for English, 3 for Russian).<br>
+**Cell#4**: to run the evaluation; the parameter *small_test='yes'* allows for testing the code on a small dataset of 10 texts.
 
 ## Input specifications
 
