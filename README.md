@@ -15,7 +15,7 @@ The provided code allows for reproducing exactly the scores reported in the Shar
 3. Drag the file(s) to evaluate in the “hypotheses” folder, located directly in */content/* on the leftside (see *Input specifications* below).
 4. Run the second cell.
 5. Run the third cell.
-6. Run the fourth cell.
+6. Run the fourth cell (see *Parameters* below).
 7. Gather results in */content/log_eval_InputFileName.txt*.
 
 It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,779 texts) with all metrics, and about 3 minutes (+/- 1 min) without TER.
@@ -27,9 +27,10 @@ It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,
 
 ## Parameters
 
-There are two parameters for **Cell#4**:
+There are three parameters for **Cell#4**:
 - *metrics*: allows for choosing which metric(s) to apply. The value must be a single string, which can contain multiple parameter names separated by a comma: 'bleu,meteor,ter,chrf++,bert,bleurt'.
 - *small_test='yes'*: allows for fast-testing the code on a small dataset of 10 texts.
+- *lang='en'/'ru'*: to choose the language of the texts to evaluate.
 
 ## Input specifications
 
