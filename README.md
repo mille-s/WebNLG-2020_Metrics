@@ -23,13 +23,14 @@ It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,
 **Description of the cells:**<br>
 **Cell#1**: to download and install metrics, download data and original code, clone repos, install python dependencies.<br>
 **Cell#2**: to create a slightly modified version of the evaluation and reference data creation codes.<br>
-**Cell#3**: to create files with the reference texts. There are up to 5 references for each input triple set, each file contains one reference for a given input (5 files in total for English, 3 for Russian).<br>
-**Cell#4**: to run the evaluation; by default, all metrics are run; see *Parameters* below.<br>
+**Cell#3**: to set evalaution parameters.<br>
+**Cell#4**: to create files with the reference texts and run the evaluation. There are up to 5 references for each input triple set, each file contains one reference for a given input (5 files in total for English, 3 for Russian).By default, all metrics are run; see *Parameters* below.<br>
 **Cell#5**: to zip and download the evaluation log folder that contains the evaluation results for all files uploaded to the *hypotheses* folder.
 
 ## Parameters
 
-There are three parameters for **Cell#4**:
+There are four parameters for **Cell#3**:
+- *shared_task='WebNLG+'/'GEM'*: to choose the task you want to evaluate outputs for (the references come from different places for each task).
 - *lang='en'/'ru'*: to choose the language of the texts to evaluate.
 - *metrics*: allows for choosing which metric(s) to apply. The value must be a single string, which can contain multiple parameter names separated by a comma: 'bleu,meteor,ter,chrf++,bert,bleurt'.
 - *small_test='yes'*: allows for fast-testing the code on a small dataset of 10 texts.
