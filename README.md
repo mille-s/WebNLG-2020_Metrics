@@ -12,10 +12,10 @@ The provided code allows for reproducing exactly the scores reported in the Shar
 ## Quick instructions to run the evaluation on Colab
 1. Select a GPU runtime (needed for bertScore and bleurt; it should be the runtime by default).
 2. Run the first cell.
-3. Drag the file(s) to evaluate in the *hypotheses* folder, located directly in */content/* on the leftside (follow *Input specifications* below).
+3. For WebNLG, drag the file(s) to evaluate in the *hypotheses* folder, located directly in */content/* on the leftside (follow *Input specifications* below).
 4. Run the second cell.
-5. Run the third cell.
-6. Run the fourth cell (see *Parameters* below).
+5. Run the third cell (see *Parameters* below).
+6. Run the fourth cell.
 7. Gather results in */content/log_eval* or run the fifth cell to download the folder.
 
 It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,779 texts) with all metrics, and about 3 minutes (+/- 1 min) without TER.
