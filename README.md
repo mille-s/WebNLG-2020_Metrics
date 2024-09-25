@@ -23,7 +23,7 @@ It takes about 15 minutes (+/- 5 min) to evaluate one output file in English (1,
 **Description of the cells:**<br>
 **Cell#1**: to download and install metrics, download data and original code, clone repos, install python dependencies.<br>
 **Cell#2**: to create a slightly modified version of the evaluation and reference data creation codes.<br>
-**Cell#3**: to set evalaution parameters.<br>
+**Cell#3**: to set evaluation parameters.<br>
 **Cell#4**: to create files with the reference texts and run the evaluation. There are up to 5 references for each input triple set, each file contains one reference for a given input (5 files in total for English, 3 for Russian).By default, all metrics are run; see *Parameters* below.<br>
 **Cell#5**: to zip and download the evaluation log folder that contains the evaluation results for all files uploaded to the *hypotheses* folder.
 
